@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Portafolio de Programador - Todo Terreno</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Estilos CSS -->
+    <style>
+        body {
+            margin: 0;
+            overflow: hidden; /* Oculta las barras de scroll */
+            font-family: Arial, sans-serif;
+        }
+
+        #overlay {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            color: #ffffff;
+            z-index: 1;
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 36px;
+        }
+
+        p {
+            font-size: 18px;
+            max-width: 400px;
+        }
+        /* Estilos para enlaces de navegación */
+        nav {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+        }
+
+            nav a {
+                color: #ffffff;
+                margin-left: 15px;
+                text-decoration: none;
+                font-size: 18px;
+            }
+
+                nav a:hover {
+                    text-decoration: underline;
+                }
+    </style>
+</head>
+<body>
+
+    <!-- Contenido superpuesto -->
+    <div id="overlay">
+        <h1>Juan Pérez</h1>
+        <p>Desarrollador Full Stack apasionado por crear soluciones innovadoras y eficientes. Experiencia en desarrollo web, aplicaciones móviles y sistemas embebidos.</p>
+    </div>
+
+    <!-- Enlaces de navegación -->
+    <nav>
+        <a href="#proyectos">Proyectos</a>
+        <a href="#habilidades">Habilidades</a>
+        <a href="#contacto">Contacto</a>
+    </nav>
+
+    <!-- Lienzo para three.js -->
+    <canvas id="canvas"></canvas>
+
+    <!-- Three.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <!-- Archivo JavaScript personalizado -->
+    <script src="js/main.js"></script>
+</body>
+</html>
